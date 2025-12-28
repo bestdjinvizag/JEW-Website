@@ -1,0 +1,11 @@
+*.zip
+*.py
+*.ps1
+server.py
+server_legacy.py
+requirements.txt
+Procfile
+railway.json
+.railwayignore
+config.json
+admin/

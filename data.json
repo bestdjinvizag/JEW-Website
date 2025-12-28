@@ -1,0 +1,128 @@
+{
+  "general_info": {
+    "phone": "+91 9704571912",
+    "email": "bestdjinvizag@gmail.com",
+    "address": "Visakhapatnam, Andhra Pradesh",
+    "hero_heading": "Best DJ in Vizag \u2013 Professional DJ, Sound & Lighting Services",
+    "hero_subheading": "Professional DJ, Sound & Lighting Services for Weddings, Parties & Corporate Events in Visakhapatnam.",
+    "page_title": "BestDJ",
+    "featured_clients_text": "TATA GROUP, RELIANCE INDUSTRIES, and ADANI GROUP are among India\u2019s most prominent private conglomerates. <br />\nIn technology and telecom, INFOSYS, TCS, and BHARTI AIRTEL stand out as global leaders. <br />\nThe private banking sector is led by HDFC BANK and ICICI BANK, while consumer and lifestyle excellence is represented by HINDUSTAN UNILEVER and TITAN COMPANY. <br />\nIn the new-age digital space, FLIPKART and PAYTM remain key players.\n"
+  },
+  "social_links": {
+    "instagram": "https://www.instagram.com/best_magician_vizag/",
+    "whatsapp": "https://wa.me/919704571912",
+    "youtube": "https://www.youtube.com/@magicvasanthvizag"
+  },
+  "services": [
+    {
+      "id": "1",
+      "number": "01",
+      "category": "Weddings",
+      "title": "Wedding DJ Services",
+      "description": "Music, sound balance, and lighting designed for wedding ceremonies and receptions.",
+      "image": "assets/images/home/parallax.avif",
+      "type": "image"
+    },
+    {
+      "id": "2",
+      "number": "02",
+      "category": "Parties",
+      "title": "Birthday Party DJ",
+      "description": "High-energy playlists suitable for kids, teens, and adults to keep the party going.",
+      "image": "assets/images/home/parallax.avif",
+      "type": "image"
+    },
+    {
+      "id": "3",
+      "number": "03",
+      "category": "Corporate",
+      "title": "Corporate Event DJ",
+      "description": "Professional DJ setup for conferences, product launches, and office celebrations.",
+      "image": "assets/images/uploads/conc.jpg",
+      "type": "image"
+    },
+    {
+      "id": "4",
+      "number": "04",
+      "category": "Audio",
+      "title": "Pro Sound Systems",
+      "description": "High-quality speakers, microphones, and mixing consoles for crystal clear audio.",
+      "image": "assets/images/home/marquee-2.avif",
+      "type": "image"
+    },
+    {
+      "id": "5",
+      "number": "05",
+      "category": "Visuals",
+      "title": "Lighting & Stage Effects",
+      "description": "LED lighting, ambience effects, focus lights, and fog machines.",
+      "image": "assets/images/home/marquee-3.avif",
+      "type": "image"
+    },
+    {
+      "id": "6",
+      "number": "06",
+      "category": "SFX",
+      "title": "Cold Fire & CO\u2082 Effects",
+      "description": "Safe, controlled special effects to create memorable moments for your entry.",
+      "image": "assets/images/home/OG.mp4",
+      "type": "video"
+    },
+    {
+      "id": "7",
+      "number": "07",
+      "category": "Weddings",
+      "title": "Sangeet Night DJ",
+      "description": "Energetic Bollywood and regional music mixes perfect for sangeet celebrations.",
+      "image": "assets/images/home/parallax.avif",
+      "type": "image"
+    },
+    {
+      "id": "8",
+      "number": "08",
+      "category": "Parties",
+      "title": "Engagement Party DJ",
+      "description": "Romantic and upbeat music selections to celebrate your special engagement.",
+      "image": "assets/images/home/marquee-2.avif",
+      "type": "image"
+    },
+    {
+      "id": "9",
+      "number": "09",
+      "category": "Audio",
+      "title": "Live Music Integration",
+      "description": "Seamless mixing of live band performances with DJ sets for a unique experience.",
+      "image": "assets/images/home/marquee-3.avif",
+      "type": "image"
+    },
+    {
+      "id": "10",
+      "number": "10",
+      "category": "Corporate",
+      "title": "Award Ceremony Sound",
+      "description": "Professional audio setup for award ceremonies, announcements, and presentations.",
+      "image": "assets/images/home/parallax.avif",
+      "type": "image"
+    }
+  ],
+  "media": {
+    "hero_slider": [
+      {
+        "type": "video",
+        "url": "assets/images/home/OG.mp4",
+        "duration": 15000
+      }
+    ],
+    "showreel": "https://vz-bf52cb50-0a5.b-cdn.net/ce1749fb-077d-416a-8df8-bc32ac669c3c/playlist.m3u8",
+    "background_music": [
+      {
+        "title": "Narvent - Fainted (mp3.pm)",
+        "url": "assets/music/Narvent_-_Fainted_(mp3.pm).mp3"
+      },
+      {
+        "title": "Background Music",
+        "url": "assets/music/bg.mp3"
+      }
+    ]
+  }
+}

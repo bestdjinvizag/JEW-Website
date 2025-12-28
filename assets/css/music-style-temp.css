@@ -1,0 +1,47 @@
+/* Floating Music Toggle Button */
+.music-toggle-btn {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+    border: none;
+    outline: none;
+}
+
+.music-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.music-toggle-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: #000;
+}
+
+.music-toggle-btn .mute-icon {
+    display: none;
+}
+
+.music-toggle-btn.is-muted .speaker-icon {
+    display: none;
+}
+
+.music-toggle-btn.is-muted .mute-icon {
+    display: block;
+}
+
+/* Hide if no music is configured */
+.music-toggle-btn.hidden {
+    display: none !important;
+}
