@@ -1,7 +1,7 @@
 # Comprehensive Frontend Project Documentation
 
 ## 1. Project Structure
-The project follows a standard static website structure with separated assets. The current codebase appears to be based on the "Zeit Media" template but customized for "Best DJ in Vizag".
+The project follows a standard static website structure with separated assets. The current codebase appears to be customized for "Best DJ in Vizag".
 
 ```text
 /
@@ -39,7 +39,7 @@ Colors extracted from CSS variables and stylesheet definitions.
 
 ---
 
-## 3. Page Breakdown: Home ([index.html](file:///C:/Users/prani/Downloads/Magic%20Sir%20Project/www.zeitmedia.vn/index.html))
+## 3. Page Breakdown: Home ([index.html](file:///c:/Users/prani/Downloads/Magic%20Sir%20Project/BestDJ/index.html))
 
 This section details every visible element, text content, and interaction on the main page.
 
@@ -101,7 +101,7 @@ This section details every visible element, text content, and interaction on the
 | :--- | :--- | :--- |
 | **Clients** | List of Ministries and Banks (Template Content like `Ministry of Public Security`, `VINGROUP`...) | n/a |
 | **Marquee 1** | `Be different.` / `Lead Boldly.` | n/a |
-| **Marquee 2** | `That’s the Zeit way` | n/a |
+| **Marquee 2** | `That’s the Best DJ way` | n/a |
 
 ### F. Scaling Text Section
 **Layout**: Large scroll-triggered text scaling effect.
@@ -155,5 +155,5 @@ This section details every visible element, text content, and interaction on the
 | **Description** | `Professional DJ, Sound & Lighting Services...` | n/a |
 | **Footer CTA** | `Book Your Event Now` | `tel:+919704571912` |
 | **Links** | `Home`, `Services`, `About Us`, `Why Us` | Internal Anchors |
-| **Copyright** | `© 2025 ZEIT MEDIA. all rights reserved` | n/a |
+    - **Copyright**: `© 2026 Best DJ in Vizag. all rights reserved`
 

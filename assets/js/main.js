@@ -23,7 +23,7 @@
         } catch (e) {
             if ("object" == typeof window) return window
         }
-    }(), r.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, t = "zeit:", r.l = (i, n, s, a) => {
+    }(), r.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, t = "bestdj:", r.l = (i, n, s, a) => {
         if (e[i]) e[i].push(n);
         else {
             var o, l;
@@ -95,7 +95,7 @@
             }
             for (t && t(i); h < a.length; h++) s = a[h], r.o(e, s) && e[s] && e[s][0](), e[s] = 0
         },
-            i = self.webpackChunkzeit = self.webpackChunkzeit || [];
+            i = self.webpackChunkbestdj = self.webpackChunkbestdj || [];
         i.forEach(t.bind(null, 0)), i.push = t.bind(null, i.push.bind(i))
     })();
     let s, a = !1,
