@@ -80,7 +80,7 @@
             n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
         }(window, document);
     </script>
-    <link href="assets/images/shared/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="assets/images/shared/favicon.png" rel="shortcut icon" type="image/png" />
     <link href="assets/images/shared/favicon.png" rel="apple-touch-icon" />
     <link href="" rel="canonical" />
     <!-- Expanded LocalBusiness Schema (South India Coverage) -->
@@ -277,6 +277,24 @@
 
             .call-btn-text {
                 display: block;
+            }
+        }
+
+        /* Simple fade-in animation for hero heading */
+        #dynamic-hero-heading {
+            animation: heroFadeIn 1.2s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes heroFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     </style>
@@ -641,10 +659,17 @@
                                     <div class="footer_link_bg"></div>
                                 </a></li>
                             <li class="social_link_item"><a rel="noopener" aria-label="Instagram" href=""
-                                    target="_blank" id="social-link-instagram" class="social_link w-inline-block"><svg
+                                    id="social-link-instagram" class="social_link w-inline-block"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none"
                                         class="u-icon-large u-zindex-2">
-                                        <path fill="#fff"
+                                        <defs>
+                                            <linearGradient id="insta_grad_mobile" x1="100%" y1="100%" x2="0%" y2="0%">
+                                                <stop stop-color="#833ab4" offset="0%" />
+                                                <stop stop-color="#fd1d1d" offset="50%" />
+                                                <stop stop-color="#fcb045" offset="100%" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path fill="url(#insta_grad_mobile)"
                                             d="M16.005 12.693a3.306 3.306 0 1 0 0 6.612 3.306 3.306 0 0 0 0-6.612Zm13.24-3.267a8.668 8.668 0 0 0-.56-3.013 5.333 5.333 0 0 0-3.093-3.094 8.667 8.667 0 0 0-3.014-.56c-1.72-.093-2.226-.093-6.573-.093-4.346 0-4.853 0-6.573.093a8.667 8.667 0 0 0-3.013.56 5.333 5.333 0 0 0-3.094 3.094 8.666 8.666 0 0 0-.56 3.013c-.093 1.72-.093 2.227-.093 6.573 0 4.347 0 4.854.093 6.574a9.2 9.2 0 0 0 .56 3.026 5.2 5.2 0 0 0 1.214 1.867 5.2 5.2 0 0 0 1.88 1.213 8.663 8.663 0 0 0 3.013.56c1.72.094 2.226.094 6.573.094s4.854 0 6.573-.094a8.663 8.663 0 0 0 3.014-.56 5.2 5.2 0 0 0 1.88-1.213 5.2 5.2 0 0 0 1.213-1.867 8.8 8.8 0 0 0 .56-3.026c.093-1.72.093-2.227.093-6.574 0-4.346 0-4.853-.093-6.573Zm-3.387 10.667a7.597 7.597 0 0 1-.52 2.4 5.146 5.146 0 0 1-2.84 2.84 7.597 7.597 0 0 1-2.413.466h-8.16a7.598 7.598 0 0 1-2.413-.466 4.667 4.667 0 0 1-1.747-1.147 4.666 4.666 0 0 1-1.093-1.693 7.334 7.334 0 0 1-.453-2.414v-8.16c.014-.824.167-1.64.453-2.413a4.667 4.667 0 0 1 1.147-1.747 4.8 4.8 0 0 1 1.693-1.093 7.6 7.6 0 0 1 2.413-.467h8.16a7.6 7.6 0 0 1 2.413.467 4.667 4.667 0 0 1 1.747 1.147 4.665 4.665 0 0 1 1.093 1.693 7.6 7.6 0 0 1 .467 2.413V16c0 2.747.093 3.027.053 4.08v.014Zm-2.133-9.92a3.172 3.172 0 0 0-1.88-1.88 5.333 5.333 0 0 0-1.84-.294h-8a5.333 5.333 0 0 0-1.84.347 3.173 3.173 0 0 0-1.88 1.813 5.734 5.734 0 0 0-.28 1.84v8c.014.629.131 1.25.347 1.84a3.173 3.173 0 0 0 1.88 1.88 5.732 5.732 0 0 0 1.773.347h8a5.331 5.331 0 0 0 1.84-.347 3.172 3.172 0 0 0 1.88-1.88c.223-.588.34-1.21.347-1.84v-8c0-.63-.118-1.253-.347-1.84v.014Zm-7.72 10.92a5.08 5.08 0 0 1-5.08-5.094 5.093 5.093 0 1 1 5.08 5.094Zm5.334-9.187a1.2 1.2 0 0 1 0-2.387 1.2 1.2 0 0 1 0 2.387Z">
                                         </path>
                                     </svg>
@@ -654,7 +679,7 @@
                                     href="https://wa.me/919704571912" target="_blank" id="social-link-whatsapp-mobile"
                                     class="social_link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="100%" viewBox="0 0 32 32" fill="none" class="u-icon-large u-zindex-2">
-                                        <path fill="#fff"
+                                        <path fill="#25D366"
                                             d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z">
                                         </path>
                                     </svg>
@@ -664,7 +689,7 @@
                                     id="social-link-youtube-mobile" class="social_link w-inline-block"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none"
                                         class="u-icon-large u-zindex-2">
-                                        <path fill="#fff"
+                                        <path fill="#FF0032"
                                             d="M31.67 9.18a4.035 4.035 0 0 0-2.84-2.85C26.33 5.65 16 5.65 16 5.65s-10.33 0-12.83.68A4.035 4.035 0 0 0 .33 9.18 42.45 42.45 0 0 0 0 16c0 2.32.11 4.6.33 6.82a4.035 4.035 0 0 0 2.84 2.85C5.67 26.35 16 26.35 16 26.35s10.33 0 12.83-.68a4.035 4.035 0 0 0 2.84-2.85c.22-2.22.33-4.5.33-6.82 0-2.32-.11-4.6-.33-6.82zM12.68 20.55v-9.1l8 4.55-8 4.55z">
                                         </path>
                                     </svg>
@@ -1752,8 +1777,9 @@
                     <div class="home_hero_title_wrap u-grid-custom">
                         <div id="w-node-_31562b80-257e-d4ce-c6a4-3cf8f18cd2dc-f18cd2d7"
                             class="home_title_column u-column-8 u-zindex-2">
-                            <h1 class="u-text-style-h1" id="dynamic-hero-heading">Best DJ in Vizag – Professional DJ,
-                                Sound & Lighting Services
+                            <h1 class="u-text-style-h1" id="dynamic-hero-heading"
+                                style="word-break: keep-all; overflow-wrap: break-word; hyphens: none;">Best DJ in Vizag
+                                – Professional DJ, Sound & Lighting Services
                             </h1>
                         </div>
                         <div class="home_featured_column u-column-4 w-dyn-list">
@@ -2221,6 +2247,131 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Equipment and Technology Section -->
+            <section id="equipment" class="u-section"
+                style="padding: 6rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                <div class="u-container">
+                    <div class="u-margin-bottom-6" style="text-align: center;">
+                        <div class="eyebrow_wrap" style="justify-content: center; margin-bottom: 1rem;">
+                            <div class="eyebrow_layout">
+                                <div class="eyebrow_marker"></div>
+                                <div class="eyebrow_text u-text-style-main w-richtext">
+                                    <p>Our Arsenal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="u-text-style-h2">Equipment & Technology</h2>
+                        <p class="u-opacity-80 u-margin-top-3"
+                            style="max-width: 600px; margin-left: auto; margin-right: auto;">
+                            Professional-grade equipment that delivers exceptional sound quality and stunning visual
+                            effects for every event.
+                        </p>
+                    </div>
+
+                    <!-- Equipment Cards Container -->
+                    <div class="equipment-cards-wrapper">
+                        <div class="equipment-cards-container">
+                            <!-- Card 1: JBL PRX ONE -->
+                            <div class="equipment-card">
+                                <div class="equipment-card-image">
+                                    <img src="assets/images/equipment/jbl_prx_one.png" alt="JBL PRX ONE Column Array"
+                                        loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="equipment-card-content">
+                                    <h3 class="u-text-style-h4 u-margin-bottom-2">JBL PRX ONE <span
+                                            style="font-size: 0.8em; opacity: 0.7; display: block;">Column Array
+                                            System</span></h3>
+                                    <div class="equipment-specs u-opacity-80"
+                                        style="font-size: 0.85rem; line-height: 1.5;">
+                                        <p><strong>Power:</strong> 2000 Watts Peak | <strong>Max SPL:</strong> 130 dB
+                                        </p>
+                                        <p><strong>Coverage:</strong> 130° Horz / 30° Vertical</p>
+                                        <div
+                                            style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                                            <strong>Best For:</strong> Indoor Functions, Receptions, Cultural Programs,
+                                            DJ Small Setup
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: JBL IRX -->
+                            <div class="equipment-card">
+                                <div class="equipment-card-image">
+                                    <img src="assets/images/equipment/speaker.png" alt="JBL IRX Powered Speaker"
+                                        loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="equipment-card-content">
+                                    <h3 class="u-text-style-h4 u-margin-bottom-2">JBL IRX Series <span
+                                            style="font-size: 0.8em; opacity: 0.7; display: block;">Powered
+                                            Speaker</span></h3>
+                                    <div class="equipment-specs u-opacity-80"
+                                        style="font-size: 0.85rem; line-height: 1.5;">
+                                        <p><strong>Power:</strong> 1300 Watts Peak | <strong>Max SPL:</strong> 124 dB
+                                        </p>
+                                        <p><strong>Response:</strong> 50Hz | 12-inch/15-inch models</p>
+                                        <div
+                                            style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                                            <strong>Best For:</strong> Medium Events, Sangeet, Birthday Parties, Indoor
+                                            DJ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: Clarion Line Array -->
+                            <div class="equipment-card">
+                                <div class="equipment-card-image">
+                                    <img src="assets/images/equipment/clarion_line_array.png"
+                                        alt="Clarion KAL 265 Line Array" loading="lazy"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="equipment-card-content">
+                                    <h3 class="u-text-style-h4 u-margin-bottom-2">Clarion KAL 265 <span
+                                            style="font-size: 0.8em; opacity: 0.7; display: block;">Line Array
+                                            System</span></h3>
+                                    <div class="equipment-specs u-opacity-80"
+                                        style="font-size: 0.85rem; line-height: 1.5;">
+                                        <p><strong>Power:</strong> 3000+ Watts | <strong>Bass:</strong> Dual 18-inch</p>
+                                        <p><strong>Config:</strong> 2 Tops + 1 Bass High Power Setup</p>
+                                        <div
+                                            style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                                            <strong>Best For:</strong> DJ Shows, Night Events, Large Parties
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4: Lighting Setup -->
+                            <div class="equipment-card">
+                                <div class="equipment-card-image">
+                                    <img src="assets/images/equipment/lighting.png" alt="Professional Lighting Setup"
+                                        loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="equipment-card-content">
+                                    <h3 class="u-text-style-h4 u-margin-bottom-2">Pro Lighting Setup <span
+                                            style="font-size: 0.8em; opacity: 0.7; display: block;">Visual
+                                            Atmosphere</span></h3>
+                                    <div class="equipment-specs u-opacity-80"
+                                        style="font-size: 0.85rem; line-height: 1.5;">
+                                        <ul style="list-style: none; padding-left: 0; margin-bottom: 0;">
+                                            <li>• LED Par Lights & Laser Lights</li>
+                                            <li>• Professional Smoke Machines</li>
+                                            <li>• Moving Heads for Dynamic Effects</li>
+                                        </ul>
+                                        <div
+                                            style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                                            <strong>Best For:</strong> Creating immersive visual experiences
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="section_cta" class="section_cta u-section">
                 <div class="cta_wrap u-container">
                     <div class="_3d_heading_wrap">
@@ -2375,7 +2526,15 @@
                                             class="social_link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg"
                                                 width="100%" viewBox="0 0 32 32" fill="none"
                                                 class="u-icon-large u-zindex-2">
-                                                <path fill="#fff"
+                                                <defs>
+                                                    <linearGradient id="insta_grad_footer" x1="100%" y1="100%" x2="0%"
+                                                        y2="0%">
+                                                        <stop stop-color="#833ab4" offset="0%" />
+                                                        <stop stop-color="#fd1d1d" offset="50%" />
+                                                        <stop stop-color="#fcb045" offset="100%" />
+                                                    </linearGradient>
+                                                </defs>
+                                                <path fill="url(#insta_grad_footer)"
                                                     d="M16.005 12.693a3.306 3.306 0 1 0 0 6.612 3.306 3.306 0 0 0 0-6.612Zm13.24-3.267a8.668 8.668 0 0 0-.56-3.013 5.333 5.333 0 0 0-3.093-3.094 8.667 8.667 0 0 0-3.014-.56c-1.72-.093-2.226-.093-6.573-.093-4.346 0-4.853 0-6.573.093a8.667 8.667 0 0 0-3.013.56 5.333 5.333 0 0 0-3.094 3.094 8.666 8.666 0 0 0-.56 3.013c-.093 1.72-.093 2.227-.093 6.573 0 4.347 0 4.854.093 6.574a9.2 9.2 0 0 0 .56 3.026 5.2 5.2 0 0 0 1.214 1.867 5.2 5.2 0 0 0 1.88 1.213 8.663 8.663 0 0 0 3.013.56c1.72.094 2.226.094 6.573.094s4.854 0 6.573-.094a8.663 8.663 0 0 0 3.014-.56 5.2 5.2 0 0 0 1.88-1.213 5.2 5.2 0 0 0 1.213-1.867 8.8 8.8 0 0 0 .56-3.026c.093-1.72.093-2.227.093-6.574 0-4.346 0-4.853-.093-6.573Zm-3.387 10.667a7.597 7.597 0 0 1-.52 2.4 5.146 5.146 0 0 1-2.84 2.84 7.597 7.597 0 0 1-2.413.466h-8.16a7.598 7.598 0 0 1-2.413-.466 4.667 4.667 0 0 1-1.747-1.147 4.666 4.666 0 0 1-1.093-1.693 7.334 7.334 0 0 1-.453-2.414v-8.16c.014-.824.167-1.64.453-2.413a4.667 4.667 0 0 1 1.147-1.747 4.8 4.8 0 0 1 1.693-1.093 7.6 7.6 0 0 1 2.413-.467h8.16a7.6 7.6 0 0 1 2.413.467 4.667 4.667 0 0 1 1.747 1.147 4.665 4.665 0 0 1 1.093 1.693 7.6 7.6 0 0 1 .467 2.413V16c0 2.747.093 3.027.053 4.08v.014Zm-2.133-9.92a3.172 3.172 0 0 0-1.88-1.88 5.333 5.333 0 0 0-1.84-.294h-8a5.333 5.333 0 0 0-1.84.347 3.173 3.173 0 0 0-1.88 1.813 5.734 5.734 0 0 0-.28 1.84v8c.014.629.131 1.25.347 1.84a3.173 3.173 0 0 0 1.88 1.88 5.732 5.732 0 0 0 1.773.347h8a5.331 5.331 0 0 0 1.84-.347 3.172 3.172 0 0 0 1.88-1.88c.223-.588.34-1.21.347-1.84v-8c0-.63-.118-1.253-.347-1.84v.014Zm-7.72 10.92a5.08 5.08 0 0 1-5.08-5.094 5.093 5.093 0 1 1 5.08 5.094Zm5.334-9.187a1.2 1.2 0 0 1 0-2.387 1.2 1.2 0 0 1 0 2.387Z">
                                                 </path>
                                             </svg>
@@ -2387,7 +2546,7 @@
                                             class="social_link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg"
                                                 width="100%" viewBox="0 0 32 32" fill="none"
                                                 class="u-icon-large u-zindex-2">
-                                                <path fill="#fff"
+                                                <path fill="#25D366"
                                                     d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z">
                                                 </path>
                                             </svg>
@@ -2398,7 +2557,7 @@
                                             class="social_link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg"
                                                 width="100%" viewBox="0 0 32 32" fill="none"
                                                 class="u-icon-large u-zindex-2">
-                                                <path fill="#fff"
+                                                <path fill="#FF0032"
                                                     d="M31.67 9.18a4.035 4.035 0 0 0-2.84-2.85C26.33 5.65 16 5.65 16 5.65s-10.33 0-12.83.68A4.035 4.035 0 0 0 .33 9.18 42.45 42.45 0 0 0 0 16c0 2.32.11 4.6.33 6.82a4.035 4.035 0 0 0 2.84 2.85C5.67 26.35 16 26.35 16 26.35s10.33 0 12.83-.68a4.035 4.035 0 0 0 2.84-2.85c.22-2.22.33-4.5.33-6.82 0-2.32-.11-4.6-.33-6.82zM12.68 20.55v-9.1l8 4.55-8 4.55z">
                                                 </path>
                                             </svg>
@@ -2447,7 +2606,7 @@
                 <div class="footer_bottom_contain u-container">
                     <div class="footer_bottom_layout">
                         <div class="footer_bottom_text"><span>© </span><span>2026</span><span> Best DJ in Vizag. All
-                                rights reserved.</span></div>
+                                rights reserved by JEW Group of Companies Since 2010.</span></div>
                     </div>
                 </div>
             </div>
